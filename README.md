@@ -37,3 +37,7 @@ di mana server mendengarkan dengan "Listener" dan client menghubungi dengan "con
 ![Modified broadcast server](/assets/images/original_broadcast.png)
 Melakukan perubahan di mana client yang baru terhubung mendapatkan pesan dari server dan untuk setiap client yang mengirim
 pesan ditampilkan ip dan portnya sebagai identitas dari pengirim
+
+## Experiment 3.1: Original code
+
+![Original webchat server](/assets/images/original_webchat.png)
