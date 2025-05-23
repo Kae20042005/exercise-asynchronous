@@ -14,13 +14,16 @@ async fn handle_connection(
 
     let mut bcast_rx = bcast_tx.subscribe();
 
+    ws_stream.send(Message::text("Farrel's Computer - From server: Welcome to chat! type a message")).await?;
+
     loop {
         tokio::select! {
             // Receive a message from this client
             msg = ws_stream.next() => {
                 if let Some(Ok(msg)) = msg {
                     if let Some(text) = msg.as_text() {
-                        let msg_to_send = format!("{}: {}", addr, text);
+                        let msg_to_send = format!("Farrel's Computer - From server: {}: {}", addr, text);
+                        println!("From client {}: {}", addr, text);
                         let _ = bcast_tx.send(msg_to_send);
                     }
                 } else {

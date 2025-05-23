@@ -31,3 +31,9 @@ yang dikirim oleh client diterima oleh server dan dikirimkan ke client lainnya y
 Ketika ada perubahan dalam port websocket milik client, maka port yang digunakan oleh listener dalam server juga harus
 diubah agar dapat saling terhubung. Keduanya menggunakan protokol websocket yang sama, yang membedakan hanya pada sisinya
 di mana server mendengarkan dengan "Listener" dan client menghubungi dengan "connect"
+
+## Experiment 2.3: Small changes, add IP and Port
+
+![Modified broadcast server](/assets/images/original_broadcast.png)
+Melakukan perubahan di mana client yang baru terhubung mendapatkan pesan dari server dan untuk setiap client yang mengirim
+pesan ditampilkan ip dan portnya sebagai identitas dari pengirim
