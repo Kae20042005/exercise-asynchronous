@@ -19,3 +19,9 @@ bersamaan. Hal ini dapat dilihat ketika message yang dikeluarkan keluar secara b
 ![Terminal when drop got removed](/assets/images/drop_removed.png)
 Setelah drop di removed, terlihat bahwa program tidak akan selesai, hal ini dikarenakan tidak ada penanda bahwa
 spawner sudah selesai (dengan drop) sehingga executor terus menjalankan program
+
+## Experiment 2.1: Original code, and how it run
+
+![Original broadcast server with 3 client](/assets/images/original_broadcast.png)
+Ketika server dijalankan dan ada client baru yang masuk maka server akan mendeteksi client tersebut. Kemudian message
+yang dikirim oleh client diterima oleh server dan dikirimkan ke client lainnya yang sedang terhubung dengan server juga.
