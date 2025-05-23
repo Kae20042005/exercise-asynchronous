@@ -25,3 +25,9 @@ spawner sudah selesai (dengan drop) sehingga executor terus menjalankan program
 ![Original broadcast server with 3 client](/assets/images/original_broadcast.png)
 Ketika server dijalankan dan ada client baru yang masuk maka server akan mendeteksi client tersebut. Kemudian message
 yang dikirim oleh client diterima oleh server dan dikirimkan ke client lainnya yang sedang terhubung dengan server juga.
+
+## Experiment 2.2: Modifying port
+
+Ketika ada perubahan dalam port websocket milik client, maka port yang digunakan oleh listener dalam server juga harus
+diubah agar dapat saling terhubung. Keduanya menggunakan protokol websocket yang sama, yang membedakan hanya pada sisinya
+di mana server mendengarkan dengan "Listener" dan client menghubungi dengan "connect"
